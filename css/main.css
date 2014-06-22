@@ -1,0 +1,88 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+h1, h2{
+    font-family: 'Nunito', sans-serif;
+}
+#mainTimer{
+    font-family: 'Nunito', sans-serif;
+    font-size: 12em;
+    line-height: 1em;
+}
+.addline{
+    display: none;
+}
+section{
+    /*background-color: #c4cacc;*/
+    margin: 20px 0;
+}
+.displayMode .span4{
+
+    font-size: 16px;
+}
+.displayMode .span4 .btn{
+    font-family: 'Nunito', sans-serif;
+    margin-left: 30px;
+}
+.container{
+/*    border:1px #000 solid;*/
+}
+section.ads{
+    text-align: center;
+    width: 100%;
+    background-color: #ffffff;
+    margin: 20px 0;
+}
+/*.ads #topad, .ads #bottomad{
+    width: 728px;
+    height: 90px;
+    margin: 0 auto;
+}*/
+.ind{
+    margin-left: 30px;
+}
+
+.excerciseImg{
+    background:transparent url("../img/weiderAll.new.png") no-repeat top left;
+    width: 196px;
+    height: 97px;
+}
+.excerciseImg.e0{
+    background-position: 0 0;
+}
+
+.excerciseImg.e1{
+    background-position: 0 -97px;
+}
+.excerciseImg.e2{
+    background-position: 0 -194px;
+}
+.excerciseImg.e3{
+    background-position: 0 -291px;
+}
+.excerciseImg.e4{
+    background-position: 0 -388px;
+ }
+.excerciseImg.e5{
+    background-position: 0 -485px;
+}
+.excerciseImg.e6{
+    background-position: 0 -582px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

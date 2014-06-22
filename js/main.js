@@ -1,0 +1,19 @@
+(function(){
+var startModules = function(){
+    appCore.start('Weekdays');
+    appCore.start('DayPicker');
+    appCore.start('Summary');
+    appCore.start('TimeDisplay');
+    appCore.start('Timer');
+    appCore.start('ShowExercise');
+    if(!isMobile()){
+        jQuery('#soundYes').click();
+        jQuery('#mobileUserInfo').hide();
+    }
+};
+if(appCore.isDomReady()){
+    startModules();
+}else{
+    appCore.addEventListener('DomReady',startModules);
+}
+}());

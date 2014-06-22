@@ -1,0 +1,17 @@
+RewriteEngine on
+# Use PHP54 Single php.ini as default
+ExpiresActive on
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType text/javascript "access plus 1 day"
+ExpiresByType text/css "access plus 1 day"
+AddType image/vnd.microsoft.icon .ico
+ExpiresByType image/vnd.microsoft.icon "access plus 3 months"
+<FilesMatch "\.(js|css|html|htm|php|xml|ogg|mp3)$">
+SetOutputFilter DEFLATE
+</FilesMatch>
+RewriteCond %{HTTP_HOST} ^weidersix\.krzysztofnowak\.net$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.weidersix\.krzysztofnowak\.net$
+RewriteRule ^/?$ "http\:\/\/weidersix\.com" [R=301,L]
+
